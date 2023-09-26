@@ -65,6 +65,7 @@ They are in high demand of ingots to power their labs
 Zorya Station was build by *G.C. Metals & Cryogenics* in conjunction with *Emerling-Voss Minerals*
 
 This is the home of everything **Ore & Ingot related**
+You can also sell grids here for space cash
 
 ## Hotspots
 ### Lutecia Hot spot: Uranium cluster
@@ -85,7 +86,7 @@ Don't get spotted or come with support
 | :--------------------------------------------- | :---------------------------------------- |
 
     -> Uranium Ingots
-    -> H2 Gas (TBI)
+    -> H2 & O2 Gas
     Presence: Eos Station - Central Hub
 
 | <img src="Screens/F-TCN.png" alt="TCN" width="32"> | Tech Provider: Tech Noir (Mike Grey) |
@@ -94,6 +95,7 @@ Don't get spotted or come with support
     -> Reactor components
     -> Gravity components
     -> All other components
+    -> H2 & O2 Gas
     Presence: Anchar Station - Research Station
 
 | <img src="Screens/F-EMV.png" alt="EMV" width="32"> | Ore Provider: Emerling-Voss Minerals (Wenna Hemingway) |
@@ -114,18 +116,19 @@ Don't get spotted or come with support
 | :---------------------------------------------- | :------------------------------------------------------------ |
 
     -> Every ingots except Uranium
-    -> Every gas (TBI)
+    -> H2 & O2 Gas (Zorya)
     Presence: Eos Station - Central Hub, Zorya Station - Outer Hub
 
 ## Game loops
 **The economy system is now in a central place to give short and long term goals**
 
-Progression is made by either *mining*, *trading*, *hauling contracts* or *scavenging* until endgame (Uranium, Reactors, Gravity Drives)
+Progression is made by either *mining*, *trading*, *hauling contracts*, *hunting* or *scavenging* until endgame (Uranium, Reactors, Gravity Drives)
 
     Players will have to make space cash to advance to end game
     Players will have access to basic space faring capabilities (Buffed hydro and low/mid energy sources)
 
 Added physical cargo hauling contracts so your Hauler builds are now useful!
+Added a Grid to Space cash mechanic for you hunters!
 
 <img src="Screens/G-Hauling-small.png" alt="Physical Cargo" width="720">
 
@@ -157,7 +160,7 @@ Some energy generation blocks have been buffed to accommodate the new progressio
 #### Hydro Engines
 Max power output doubled from 5 to 10MW and 0.5 to 1MW
 
-Fuel multiplier doubled from 0.01 to 0.02
+Fuel efficiency doubled from 0.01 to 0.02
 #### Solar Panel
 Power Output doubled from 0.16 to 0.32MW and 0.04 to 0.08MW
 
@@ -165,6 +168,8 @@ Power Output doubled from 0.16 to 0.32MW and 0.04 to 0.08MW
 Recipe: Changed Gravity Generator requirement to 100 Superconductors
 
 Buffed Max jump mass from 1.250.000 to 1.500.000
+Increased Recharge powerdraw from 32 to 42MW
+Reduced power efficiency from 80% to 60M
 
 ### Safe Zone
 Recipe: Changed Gravity Generator requirement to 300 Superconductors
@@ -192,6 +197,7 @@ Doubled opening and closing speed (from 2 to 4) to make it inline with normal sl
     Hydrogen thruster sounds have been revamped
     Large Industrial Thruster make a Epstein-Drive like sound effect when starting up
     "Ship Engine" sound effects have been made quieter to preserve immersion
+    Large railguns now pack a punch
 
 FIXME: Small ship sound effects are globally low <== Game limitation
 
@@ -209,33 +215,41 @@ FIXME: Small ship sound effects are globally low <== Game limitation
 
 # World Navigation, Comms & Combat
     The world comes with a custom version of Relative Top Speed,
-    WeaponCore Vanilla replacer, Thrust Signature & Jump Alert
+    custom WeaponCore Vanilla replacer, Thrust Signature, Jump Drive Inhibitor & Jump Alert
 
 ## Navigation: Relative Top Speed
 <img src="Screens/WCC-RTS-small.png" alt="Relative Top Speed" width="720">
 
     There is now 2 max speeds:
-        Space: 1000m/s
+        Space: 1500m/s
         Planets: 100m/s
     Your speed will increase linearly going from the planet's surface to space (40km)
 
-The Mass and Thrust to Weight ratio will influence your cruise speed and max boost speed: *be careful when building* :D
+The Thrust to Weight Ratio will influence your cruise speed and max boost speed: *be careful when building* :D
 
 ## Navigation: Hydrogen rebalance
 
-    Large hydrogen thrusters have a x2 thrust increase
+    Large hydrogen thrusters have a x3 thrust increase
     Small hydrogen thrusters have a x1.25 thrust increase
     Hydrogen efficiency buffed by 1.38 as it'll be used 
     for power and travel in this rebalance
+
+## Navigation: Jump Drives Inhibitor
+
+    Jump Drives were a easy way in and out of combat, JDI comes to resolve the issue.
+    Grids can't jump if there is an enemy or neutral grid in:
+    a 6km radius of the arrival point
+    or
+    a 10km radius of the departure point
+
 
 ## Comms: Thrust Signature
 <img src="Screens/WCC-TS.gif" alt="Thrust Signature" width="720">
 
     All player grids must have at least one beacon
     That beacon will emit your signature when you have active 
-    thrusters/gravity drive
-    Gravity Drive receive a stealth bonus up to 10%
-    Average ships will be visible up to 30km, be careful how you navigate
+    thrusters/gravity drive or have active power producers
+    Average ships will be visible up to 30km during thrust, be careful how you navigate
     or get spotted!
     Thruster plumes are visible up to 8km
 
@@ -244,7 +258,7 @@ The Mass and Thrust to Weight ratio will influence your cruise speed and max boo
 
     Jumping now is more dangerous: any player in a 10 km radius
     from your jump arrival point will be notified for a short amount of time
-    This is to promote more mindful jumping manoeuvres
+    This is to promote more mindful jumping maneuvers
     and to give a chance to people being jump-ambushed
 
 ## Comms: Antennas
@@ -256,23 +270,36 @@ The Mass and Thrust to Weight ratio will influence your cruise speed and max boo
 Luyten use Weaponcore to have a better and smoother combat experience: 
 **Combat has now 4 engagement ranges:**
 
-**3.5km to 2.5km Torpedo Range**
+**4.5km to 2.5km Torpedo Range**
 
 <img src="Screens/WCC-WCR_Torpedo.gif" alt="WC Vanilla replacer" width="720">
 
     -> Static rocket launchers now fire homing torpedoes
     they have high damage but can be shot down by PDCs
-    -> They have a max speed of 300:150m/s (large:small)
-    -> Reload speed of 40s
-    This make PDC mandatory on all ships, good acceleration helps too
+    -> They have a max speed of 400:150m/s (large:small)
+    -> Launchers will overheat after shooting 4 torpedoes
+    -> Reload speed of 40s after 8 torpedo shots
+    This make PDC mandatory on all ships, good acceleration/maneuverability helps too
 
 **2.5km Railgun range**
 
-<img src="Screens/WCC-WCR-small.png" alt="WC Vanilla replacer" width="720">
+<img src="Screens/WCC-WCR.gif" alt="WC Vanilla replacer" width="720">
 
-    -> Railgun charge is now 25s from 1min
-    -> Railgun Sabot now inflict a bit of aoe damage at the hit location
-    This make Railguns more relevant during fights
+    -> Large Railgun charge is now 30s from 1min
+    -> Small Railgun powerdraw increased from 38MW to 76MW (x2)
+    -> Large Railgun Sabot will pierce through entire grids
+    -> Large Railgun Sabot is now red with a shorter trail line
+
+    -> Small Railgun charge is now 10s from 15s
+    -> Small Railgun powerdraw increased from 3.6MW to 7.2MW (x2)
+    -> Small Railgun Sabot has a 1.65km range and will damage up to 2 large grid heavy blocks
+    -> Small Railgun Sabot has now a shorter trail line
+
+    -> Railgun sabots will take 1sec to reach its target from max range
+    -> Increased backkick force by 10 to make railgun's shot feel powerful
+    
+    This make Railguns more relevant during fights and a real end game weapon
+    Railguns will overheat if used too much on cooldown
 
 **2km/1.5km Cannon range**
 
@@ -290,6 +317,7 @@ Luyten use Weaponcore to have a better and smoother combat experience:
         and ~66% the damage (from 90 to 60)
     -> Gatling turret rotation speed and accuracy increased by x10
     -> Gatling ammo is bit more potent against non-armor blocks (+10%)
+    -> Gatlings have now an overheat mechanic to avoid mindless spray and pray
     -> Missiles turret range increased from 800m to 1km (Dumb fire rockets)
     -> Interior turret is same as Vanilla
 
@@ -325,6 +353,7 @@ To fix those weaknesses the following rules applies:
     12 Rocket Launchers
     12 Railguns
     15 of each Turrets
+    15 CTC
 ### Misc
     3 Respawn points (Survival Kits & Medical Rooms)
     56 Gravity generators
@@ -342,9 +371,10 @@ To fix those weaknesses the following rules applies:
     88 O2/H2 Generators
 ### Weapons
     24 Rocket Launchers
-    12 Railguns
+    24 Railguns
 ### Automation
     30 Programmable Blocks
+    30 Event controllers
     40 Timer Blocks
     15 AI Offense / AI Defense
     20 AI Move
@@ -353,4 +383,16 @@ To fix those weaknesses the following rules applies:
     60 Hydrogen Tanks
     20 Oxygen Tanks 
     8 Respawn points (Survival Kits & Medical Rooms)
-    
+
+# Credits
+Weaponcore: Darkstar & al
+Relative Top Speed: Gauge
+Freight Contract: Patrick
+Store block: diK
+Modular Encounter System: Meridius_IX / Lucas
+KMDI Ships: Papple2
+
+Trade Hubs:
+* Anshar Station: Cross-1 Research Station by Trav
+* Eos Station: NEXUS - Deep Space Outpost by MACH Velocity
+* Zorya Station: Hydrogen Refinery by Vomsay
