@@ -55,7 +55,7 @@ And the only host of *Type One Energy* (**Uranium supplier**) and *Nariman Dynam
 
 *Tech Noir*'s Anchar Station is the place to buy **all your components**
 
-Their mastery in high tech R&D make them the only place to buy **Reactor & Gravity components**
+Their mastery in high tech R&D make them the only place to buy **Reactor & Gravity components** and other end game components like **Accumulators and Nanite Containers**
 
 They are in high demand of ingots to power their labs
 
@@ -94,7 +94,9 @@ Don't get spotted or come with support
 
     -> Reactor components
     -> Gravity components
-    -> All other components
+    -> Accumulators
+    -> Nanite containers
+    -> All other components except Guidance Systems
     -> H2 & O2 Gas
     Presence: Anchar Station - Research Station
 
@@ -107,7 +109,7 @@ Don't get spotted or come with support
 | <img src="Screens/F-NMD.png" alt="NMD" width="32"> | Component Provider: Nariman Dynamics (Warwick Wishmonger) |
 | :--------------------------------------------- | :-------------------------------------------------------- |
 
-    -> Every components except Reactor and Grav
+    -> Every components except Reactor, Gravity, Accumulator & Nanite Containers
     -> ZoneChips
     -> Missiles
     Presence: Eos Station - Central Hub
@@ -119,12 +121,12 @@ Don't get spotted or come with support
     -> H2 & O2 Gas (Zorya)
     Presence: Eos Station - Central Hub, Zorya Station - Outer Hub
 
-## Game loops
+## Gameplay loops
 **The economy system is now in a central place to give short and long term goals**
 
 Progression is made by either *mining*, *trading*, *hauling contracts*, *hunting* or *scavenging* until endgame (Uranium, Reactors, Gravity Drives)
 
-    Players will have to make space cash to advance to end game
+    Players will have to make space cash or pirate NPCs to advance to end game
     Players will have access to basic space faring capabilities (Buffed hydro and low/mid energy sources)
 
 Added physical cargo hauling contracts so your Hauler builds are now useful!
@@ -142,17 +144,22 @@ Decreased Ore collection ratios:
 * Cobalt from 3 to 1.5
 * Silicon from 3 to 1
   
-It was way too easy to produce big projects after a single mining campagne
+It was way too easy to produce big projects after a single mining campaign
 
 ## Ingots & Components
+Stone is now only processed in the Survival Kit, lets go back to the old SE!
+
+Silicon is now required for:
+* Construction Components 0.1kg per component
+* Motors 0.5kg per component
+* Detector Components 3kg per component
+  
 Silver ingots are now included in the production of:
 * Superconductor : 0.5kg per component
 * Thruster components: 0.5kg per component
 This is to make silver mining more relevant instead of the current *mine one node and be done*
 
-Gravel production is now reduced by a factor of 10
-
-TODO: make gravel relevant somehow
+Gravel production is now reduced by a factor of 10 and has no usefulness for the moment
 
 ## Blocks
 ### Energy Generation
@@ -189,13 +196,22 @@ Large Ore Detector range increased from 150 to 300m
 ### Hatch Doors
 Doubled opening and closing speed (from 2 to 4) to make it inline with normal sliding door
 
-## Audio
-    Hydrogen thruster sounds have been revamped
-    Large Industrial Thruster make a Epstein-Drive like sound effect when starting up
-    "Ship Engine" sound effects have been made quieter to preserve immersion
-    Large railguns now pack a punch
+# Engineer suit & Jetpack
+A jetpack, a grinder and a handful of bottles was all what was needed to beat the game, not anymore. The following nerf are now applied:
 
-FIXME: Small ship sound effects are globally low <== Game limitation
+## Suit
+* Oxygen consumption is now 130% of the vanilla version
+* Suit's oxygen refill will only happen at a Kit, MedBay or inside a cockpit
+You WILL have to open your visor in a pressurized environment to not deplete your O2 and die
+* Power consumption in extreme conditions is now 1.5 from 2.5
+You'll have power for longer in cold or hot environment
+
+## Jetpack
+* H2 efficiency is halved
+* Jetpack thrust is halved
+* Slow down speed is 1/5 of vanilla
+  
+You wont be able to stay in the air on planet as long as before and falling from high place is now risky, better have an utility ship or a ship printer early/mid game
 
 # MES PVE NPC Factions
 * Knighmare Defense Industries (very difficult encounters)
@@ -208,21 +224,22 @@ FIXME: Small ship sound effects are globally low <== Game limitation
   * An aggressive pirate faction
   * Custom made for the scenario
 * Reavers 
+  * As a reminder, your grids will have a broadcast on at all time, so be extra cautious or they'll come for you
 * Imber
 * Incon
 * Parallax
 * SPRTE
 
 # World Navigation, Comms & Combat
-    The world comes with a custom version of Relative Top Speed,
-    custom WeaponCore Vanilla replacer, Thrust Signature, Jump Drive Inhibitor & Jump Alert
+    The world comes with a specially made Dynamic Max Speed mod,
+    custom WeaponCore Vanilla replacer with new particles, Thrust Signature and Jump Drive Inhibitor
 
 ## Navigation: Dynamic Max Speed
 <img src="Screens/WCC-RTS-small.png" alt="Relative Top Speed" width="720">
 
     There is now 3 max speeds:
         Fast Space Zone: 5000m/s
-        Slow Space Zones: 500m/s
+        Slow Space Zones (around POIs): 500m/s
         Planets: 150m/s
     Your speed will increase linearly going from the planet's surface to space (40km)
 
@@ -236,6 +253,11 @@ Having a JumpDrive on board will give you better boost speed
     Hydrogen efficiency buffed by 1.38 as it'll be used 
     for power and travel in this rebalance
 
+## Navigation: JumpDrive
+
+    JumpDrive no longer provide jumping capabilities, however it'll give a substantial boost to your grid Max Speed under thrust.
+    Cruising speed will remain the same
+
 ## Comms: Thrust Signature
 <img src="Screens/WCC-TS.gif" alt="Thrust Signature" width="720">
 
@@ -245,15 +267,17 @@ Having a JumpDrive on board will give you better boost speed
     Average ships will be visible up to 30km during thrust, be careful how you navigate
     or get spotted!
     Thruster plumes are visible up to 8km
+<img src="Screens/T-Thruster_Plume.png" alt="Thrust Signature" width="720">
 
 ## Comms: Antennas
-    Laser Antennas does not need line of sight anymore
+    Laser Antennas do not need line of sight anymore
     The power requirement have been halved to accommodate
     trade-locked high power generation
 
 ## Combat: WC Vanilla replacer
 Luyten use Weaponcore to have a better and smoother combat experience: 
 **Combat has now 4 engagement ranges:**
+<img src="Screens/WCC-Ranges.png" alt="WC Vanilla replacer" width="1260">
 
 **10km to 5km Torpedo Range**
 
@@ -271,7 +295,7 @@ Luyten use Weaponcore to have a better and smoother combat experience:
 <img src="Screens/WCC-WCR.gif" alt="WC Vanilla replacer" width="720">
 
     -> Large Railgun charge is now 30s from 1min
-    -> Small Railgun powerdraw increased from 38MW to 76MW (x2)
+    -> Large Railgun powerdraw increased from 38MW to 76MW (x2)
     -> Large Railgun Sabot will pierce through entire grids
     -> Large Railgun Sabot is now red with a shorter trail line
 
@@ -298,16 +322,18 @@ Luyten use Weaponcore to have a better and smoother combat experience:
 <img src="Screens/WCC-WCR_PDC.gif" alt="WC Vanilla replacer" width="720">
 
     -> Gatling turrets act now as PDCs, they will shoot down incoming missiles
-    -> Gatling tracer is now Orange and visible up to 5km
+    -> Gatling tracer is now Orange and visible up to 10km
     -> Gatling turret and gun have 133% fire rate (from 700rpm to 1060rpm)
         and ~66% the damage (from 90 to 60)
     -> Gatling turret rotation speed and accuracy increased by x10
     -> Gatling ammo is bit more potent against non-armor blocks (+10%)
     -> Gatlings have now an overheat mechanic to avoid mindless spray and pray
-    -> Missiles turret range increased from 800m to 1km (Dumb fire rockets)
+    -> Missiles turret range increased from 800m to 1.5km (Dumb fire rockets)
+        Dumb rockets have a small tracking ability to compensate for the much higher ship speeds
     -> Interior turret is same as Vanilla
 
 This rebalance is done to make ships roles more contrasted: ship speeds, armouring and weapon loadouts are now linked
+Paired with the new component progression and power consumption, I hope fleets will be more interesting to design and fight with
 
 Note: *this rebalance was done with your existing blueprints in mind.
 They should keep their relevance in and out of Luyten's settings.*
@@ -319,6 +345,7 @@ They should keep their relevance in and out of Luyten's settings.*
     Artillery Shell:                + Increased Uranium x5
     Large & Small Railgun Sabots:   + Increased Uranium x3
 Going into battle was almost free with high-end weapons, now proper logistics and planning is mandatory
+
 # Block limits
 Block spamming is a real performance issue in Space Engineers and does not promote sharing grids between players,
 
@@ -373,9 +400,6 @@ To fix those weaknesses the following rules applies:
 
 # Credits
 Weaponcore: Darkstar & al
-Relative Top Speed: Gauge
-Elite Dangerous - FSD Supercruise: Dorimanx & Specter
-Freight Contract: Patrick
 Store block: diK
 Nebula: Jakaria
 Modular Encounter System: Meridius_IX / Lucas
