@@ -14,7 +14,7 @@
 <img src="Screens/S-Mars-small.png" alt="Welcome" width="720">
 
 * **Luma** : A gas-giant (Start on its Satellite)
-    * Satellite: **Triton**
+    * Satellite: **Teal**
 
 <img src="Screens/S-Triton-small.png" alt="Welcome" width="720">
 
@@ -24,7 +24,7 @@
 ## World settings
 The idea behind Luyten was to promote traveling around the system, make grouping with other people worthwhile and remove the "*do this once and be done*" feeling of the vanilla experience:
 
-**No Uranium ore** is present in the world, players can buy it from one NPC Provider (**Type One Energy**) or mine it at the Dangerous Uranium Hotspot (**Lutecia Hotspot - KMDI controlled**)
+**No Uranium ore** is present in asteroids, players can buy it from one NPC Provider (**Type One Energy**) or mine it at the Dangerous Uranium Hotspot (**Lutecia Hotspot - KMDI controlled**)
 
 **Reactor and Gravity components are now end game** and locked up behind a NPC Provider (**Tech Noir**)
 
@@ -69,7 +69,7 @@ You can also sell grids here for space cash
 
 ## Hotspots
 ### Lutecia Hot spot: Uranium cluster
-A small cluster of rather large pure Uranite asteroids and home of the fearless KMDI Faction
+A small cluster of rather large pure Uranite asteroids and defended by the KMDI Faction
 
 <img src="Screens/H-Lutecia-small.png" alt="Lutecia Hot Spot" width="720">
 
@@ -167,10 +167,6 @@ Power Output doubled from 0.16 to 0.32MW and 0.04 to 0.08MW
 ### Jump Drive
 Recipe: Changed Gravity Generator requirement to 100 Superconductors
 
-Buffed Max jump mass from 1.250.000 to 1.500.000
-Increased Recharge powerdraw from 32 to 42MW
-Reduced power efficiency from 80% to 60M
-
 ### Safe Zone
 Recipe: Changed Gravity Generator requirement to 300 Superconductors
 
@@ -207,25 +203,31 @@ FIXME: Small ship sound effects are globally low <== Game limitation
 
   * They will guard fiercely the Lutecia Hot Spot
   * Players will have to come with combat ships to mine or will have to hide/flee
-
+  * Custom made for the scenario
+* Valkyrja Mad Eagles (difficult encounters)
+  * An aggressive pirate faction
+  * Custom made for the scenario
 * Reavers 
 * Imber
 * Incon
 * Parallax
+* SPRTE
 
 # World Navigation, Comms & Combat
     The world comes with a custom version of Relative Top Speed,
     custom WeaponCore Vanilla replacer, Thrust Signature, Jump Drive Inhibitor & Jump Alert
 
-## Navigation: Relative Top Speed
+## Navigation: Dynamic Max Speed
 <img src="Screens/WCC-RTS-small.png" alt="Relative Top Speed" width="720">
 
-    There is now 2 max speeds:
-        Space: 1500m/s
-        Planets: 100m/s
+    There is now 3 max speeds:
+        Fast Space Zone: 5000m/s
+        Slow Space Zones: 500m/s
+        Planets: 150m/s
     Your speed will increase linearly going from the planet's surface to space (40km)
 
 The Thrust to Weight Ratio will influence your cruise speed and max boost speed: *be careful when building* :D
+Having a JumpDrive on board will give you better boost speed
 
 ## Navigation: Hydrogen rebalance
 
@@ -233,15 +235,6 @@ The Thrust to Weight Ratio will influence your cruise speed and max boost speed:
     Small hydrogen thrusters have a x1.25 thrust increase
     Hydrogen efficiency buffed by 1.38 as it'll be used 
     for power and travel in this rebalance
-
-## Navigation: Jump Drives Inhibitor
-
-    Jump Drives were a easy way in and out of combat, JDI comes to resolve the issue.
-    Grids can't jump if there is an enemy or neutral grid in:
-    a 6km radius of the arrival point
-    or
-    a 10km radius of the departure point
-
 
 ## Comms: Thrust Signature
 <img src="Screens/WCC-TS.gif" alt="Thrust Signature" width="720">
@@ -253,14 +246,6 @@ The Thrust to Weight Ratio will influence your cruise speed and max boost speed:
     or get spotted!
     Thruster plumes are visible up to 8km
 
-## Comms: Jump Alert
-<img src="Screens/WCC-JA.gif" alt="Jump Alert" width="720">
-
-    Jumping now is more dangerous: any player in a 10 km radius
-    from your jump arrival point will be notified for a short amount of time
-    This is to promote more mindful jumping maneuvers
-    and to give a chance to people being jump-ambushed
-
 ## Comms: Antennas
     Laser Antennas does not need line of sight anymore
     The power requirement have been halved to accommodate
@@ -270,7 +255,7 @@ The Thrust to Weight Ratio will influence your cruise speed and max boost speed:
 Luyten use Weaponcore to have a better and smoother combat experience: 
 **Combat has now 4 engagement ranges:**
 
-**4.5km to 2.5km Torpedo Range**
+**10km to 5km Torpedo Range**
 
 <img src="Screens/WCC-WCR_Torpedo.gif" alt="WC Vanilla replacer" width="720">
 
@@ -281,7 +266,7 @@ Luyten use Weaponcore to have a better and smoother combat experience:
     -> Reload speed of 40s after 8 torpedo shots
     This make PDC mandatory on all ships, good acceleration/maneuverability helps too
 
-**2.5km Railgun range**
+**6km Railgun range**
 
 <img src="Screens/WCC-WCR.gif" alt="WC Vanilla replacer" width="720">
 
@@ -292,7 +277,7 @@ Luyten use Weaponcore to have a better and smoother combat experience:
 
     -> Small Railgun charge is now 10s from 15s
     -> Small Railgun powerdraw increased from 3.6MW to 7.2MW (x2)
-    -> Small Railgun Sabot has a 1.65km range and will damage up to 2 large grid heavy blocks
+    -> Small Railgun Sabot has a 3.5km range and will damage up to 2 large grid heavy blocks
     -> Small Railgun Sabot has now a shorter trail line
 
     -> Railgun sabots will take 1sec to reach its target from max range
@@ -301,13 +286,14 @@ Luyten use Weaponcore to have a better and smoother combat experience:
     This make Railguns more relevant during fights and a real end game weapon
     Railguns will overheat if used too much on cooldown
 
-**2km/1.5km Cannon range**
+**4km/3km Cannon range**
 
-    -> Vanilla Artillery and Assault Canon ranges and damage
+    -> Artillery range is 4km and Vanilla damage
+    -> Assault Canon range is 3km and Vanilla damage
     -> Assault Canon shell tracers now have a red hue
     This is for better visual contrast from Artillery Shells
     
-**1km CQB**
+**1.5km CQB**
 
 <img src="Screens/WCC-WCR_PDC.gif" alt="WC Vanilla replacer" width="720">
 
@@ -351,7 +337,8 @@ To fix those weaknesses the following rules applies:
     10 Oxygen Tanks
 ### Weapons
     12 Rocket Launchers
-    12 Railguns
+    16 Large Railguns
+    8  Small Railguns
     15 of each Turrets
     15 CTC
 ### Misc
@@ -387,10 +374,13 @@ To fix those weaknesses the following rules applies:
 # Credits
 Weaponcore: Darkstar & al
 Relative Top Speed: Gauge
+Elite Dangerous - FSD Supercruise: Dorimanx & Specter
 Freight Contract: Patrick
 Store block: diK
+Nebula: Jakaria
 Modular Encounter System: Meridius_IX / Lucas
 KMDI Ships: Papple2
+VME Ships: Taidyr
 
 Trade Hubs:
 * Anshar Station: Cross-1 Research Station by Trav

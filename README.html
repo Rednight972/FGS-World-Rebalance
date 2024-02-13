@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-    <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Luyten World</title>
-        <style>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Luyten World</title>
+            <style>
 /* From extension vscode.github */
 /*---------------------------------------------------------------------------------------------
  *  Copyright (c) Microsoft Corporation. All rights reserved.
@@ -16,7 +16,7 @@
 }
 
 </style>
-        
+            
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
 <style>
@@ -37,10 +37,106 @@
     pointer-events: none;
 }
 </style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
         
-    </head>
-    <body class="vscode-body vscode-light">
-        <!-- title: Luyten World --> 
+        </head>
+        <body class="vscode-body vscode-light">
+            <!-- title: Luyten World --> 
 <h1 id="the-world">The World</h1>
 <pre><code>Luyten is a 3 Planet Star-system:
 </code></pre>
@@ -64,7 +160,7 @@
 <ul>
 <li><strong>Luma</strong> : A gas-giant (Start on its Satellite)
 <ul>
-<li>Satellite: <strong>Triton</strong></li>
+<li>Satellite: <strong>Teal</strong></li>
 </ul>
 </li>
 </ul>
@@ -74,7 +170,7 @@ goal oriented and have you travel around the system
 </code></pre>
 <h2 id="world-settings">World settings</h2>
 <p>The idea behind Luyten was to promote traveling around the system, make grouping with other people worthwhile and remove the &quot;<em>do this once and be done</em>&quot; feeling of the vanilla experience:</p>
-<p><strong>No Uranium ore</strong> is present in the world, players can buy it from one NPC Provider (<strong>Type One Energy</strong>) or mine it at the Dangerous Uranium Hotspot (<strong>Lutecia Hotspot - KMDI controlled</strong>)</p>
+<p><strong>No Uranium ore</strong> is present in asteroids, players can buy it from one NPC Provider (<strong>Type One Energy</strong>) or mine it at the Dangerous Uranium Hotspot (<strong>Lutecia Hotspot - KMDI controlled</strong>)</p>
 <p><strong>Reactor and Gravity components are now end game</strong> and locked up behind a NPC Provider (<strong>Tech Noir</strong>)</p>
 <p>-&gt; Playing with gravity and high power density generation is now  more &quot;active&quot; with money-to-component grind and money-to-uranium grind</p>
 <p>-&gt; This will make end game ships and bases use the Economy System</p>
@@ -104,7 +200,7 @@ goal oriented and have you travel around the system
 You can also sell grids here for space cash</p>
 <h2 id="hotspots">Hotspots</h2>
 <h3 id="lutecia-hot-spot-uranium-cluster">Lutecia Hot spot: Uranium cluster</h3>
-<p>A small cluster of rather large pure Uranite asteroids and home of the fearless KMDI Faction</p>
+<p>A small cluster of rather large pure Uranite asteroids and defended by the KMDI Faction</p>
 <img src="Screens/H-Lutecia-small.png" alt="Lutecia Hot Spot" width="720">
 <p>Don't get spotted or come with support</p>
 <h3 id="hyakutake-hot-spot-fragmented-ice-comet">Hyakutake Hot spot: Fragmented Ice comet</h3>
@@ -214,9 +310,6 @@ This is to make silver mining more relevant instead of the current <em>mine one 
 <p>Power Output doubled from 0.16 to 0.32MW and 0.04 to 0.08MW</p>
 <h3 id="jump-drive">Jump Drive</h3>
 <p>Recipe: Changed Gravity Generator requirement to 100 Superconductors</p>
-<p>Buffed Max jump mass from 1.250.000 to 1.500.000
-Increased Recharge powerdraw from 32 to 42MW
-Reduced power efficiency from 80% to 60M</p>
 <h3 id="safe-zone">Safe Zone</h3>
 <p>Recipe: Changed Gravity Generator requirement to 300 Superconductors</p>
 <p>Buffed ZoneChips duration x3 (from 60 to 180min)</p>
@@ -248,6 +341,14 @@ Large railguns now pack a punch
 <ul>
 <li>They will guard fiercely the Lutecia Hot Spot</li>
 <li>Players will have to come with combat ships to mine or will have to hide/flee</li>
+<li>Custom made for the scenario</li>
+</ul>
+</li>
+<li>
+<p>Valkyrja Mad Eagles (difficult encounters)</p>
+<ul>
+<li>An aggressive pirate faction</li>
+<li>Custom made for the scenario</li>
 </ul>
 </li>
 <li>
@@ -262,31 +363,29 @@ Large railguns now pack a punch
 <li>
 <p>Parallax</p>
 </li>
+<li>
+<p>SPRTE</p>
+</li>
 </ul>
 <h1 id="world-navigation-comms--combat">World Navigation, Comms &amp; Combat</h1>
 <pre><code>The world comes with a custom version of Relative Top Speed,
 custom WeaponCore Vanilla replacer, Thrust Signature, Jump Drive Inhibitor &amp; Jump Alert
 </code></pre>
-<h2 id="navigation-relative-top-speed">Navigation: Relative Top Speed</h2>
+<h2 id="navigation-dynamic-max-speed">Navigation: Dynamic Max Speed</h2>
 <img src="Screens/WCC-RTS-small.png" alt="Relative Top Speed" width="720">
-<pre><code>There is now 2 max speeds:
-    Space: 1500m/s
-    Planets: 100m/s
+<pre><code>There is now 3 max speeds:
+    Fast Space Zone: 5000m/s
+    Slow Space Zones: 500m/s
+    Planets: 150m/s
 Your speed will increase linearly going from the planet's surface to space (40km)
 </code></pre>
-<p>The Thrust to Weight Ratio will influence your cruise speed and max boost speed: <em>be careful when building</em> :D</p>
+<p>The Thrust to Weight Ratio will influence your cruise speed and max boost speed: <em>be careful when building</em> :D
+Having a JumpDrive on board will give you better boost speed</p>
 <h2 id="navigation-hydrogen-rebalance">Navigation: Hydrogen rebalance</h2>
 <pre><code>Large hydrogen thrusters have a x3 thrust increase
 Small hydrogen thrusters have a x1.25 thrust increase
 Hydrogen efficiency buffed by 1.38 as it'll be used 
 for power and travel in this rebalance
-</code></pre>
-<h2 id="navigation-jump-drives-inhibitor">Navigation: Jump Drives Inhibitor</h2>
-<pre><code>Jump Drives were a easy way in and out of combat, JDI comes to resolve the issue.
-Grids can't jump if there is an enemy or neutral grid in:
-a 6km radius of the arrival point
-or
-a 10km radius of the departure point
 </code></pre>
 <h2 id="comms-thrust-signature">Comms: Thrust Signature</h2>
 <img src="Screens/WCC-TS.gif" alt="Thrust Signature" width="720">
@@ -297,13 +396,6 @@ Average ships will be visible up to 30km during thrust, be careful how you navig
 or get spotted!
 Thruster plumes are visible up to 8km
 </code></pre>
-<h2 id="comms-jump-alert">Comms: Jump Alert</h2>
-<img src="Screens/WCC-JA.gif" alt="Jump Alert" width="720">
-<pre><code>Jumping now is more dangerous: any player in a 10 km radius
-from your jump arrival point will be notified for a short amount of time
-This is to promote more mindful jumping maneuvers
-and to give a chance to people being jump-ambushed
-</code></pre>
 <h2 id="comms-antennas">Comms: Antennas</h2>
 <pre><code>Laser Antennas does not need line of sight anymore
 The power requirement have been halved to accommodate
@@ -312,7 +404,7 @@ trade-locked high power generation
 <h2 id="combat-wc-vanilla-replacer">Combat: WC Vanilla replacer</h2>
 <p>Luyten use Weaponcore to have a better and smoother combat experience:
 <strong>Combat has now 4 engagement ranges:</strong></p>
-<p><strong>4.5km to 2.5km Torpedo Range</strong></p>
+<p><strong>10km to 5km Torpedo Range</strong></p>
 <img src="Screens/WCC-WCR_Torpedo.gif" alt="WC Vanilla replacer" width="720">
 <pre><code>-&gt; Static rocket launchers now fire homing torpedoes
 they have high damage but can be shot down by PDCs
@@ -321,7 +413,7 @@ they have high damage but can be shot down by PDCs
 -&gt; Reload speed of 40s after 8 torpedo shots
 This make PDC mandatory on all ships, good acceleration/maneuverability helps too
 </code></pre>
-<p><strong>2.5km Railgun range</strong></p>
+<p><strong>6km Railgun range</strong></p>
 <img src="Screens/WCC-WCR.gif" alt="WC Vanilla replacer" width="720">
 <pre><code>-&gt; Large Railgun charge is now 30s from 1min
 -&gt; Small Railgun powerdraw increased from 38MW to 76MW (x2)
@@ -330,7 +422,7 @@ This make PDC mandatory on all ships, good acceleration/maneuverability helps to
 
 -&gt; Small Railgun charge is now 10s from 15s
 -&gt; Small Railgun powerdraw increased from 3.6MW to 7.2MW (x2)
--&gt; Small Railgun Sabot has a 1.65km range and will damage up to 2 large grid heavy blocks
+-&gt; Small Railgun Sabot has a 3.5km range and will damage up to 2 large grid heavy blocks
 -&gt; Small Railgun Sabot has now a shorter trail line
 
 -&gt; Railgun sabots will take 1sec to reach its target from max range
@@ -339,12 +431,13 @@ This make PDC mandatory on all ships, good acceleration/maneuverability helps to
 This make Railguns more relevant during fights and a real end game weapon
 Railguns will overheat if used too much on cooldown
 </code></pre>
-<p><strong>2km/1.5km Cannon range</strong></p>
-<pre><code>-&gt; Vanilla Artillery and Assault Canon ranges and damage
+<p><strong>4km/3km Cannon range</strong></p>
+<pre><code>-&gt; Artillery range is 4km and Vanilla damage
+-&gt; Assault Canon range is 3km and Vanilla damage
 -&gt; Assault Canon shell tracers now have a red hue
 This is for better visual contrast from Artillery Shells
 </code></pre>
-<p><strong>1km CQB</strong></p>
+<p><strong>1.5km CQB</strong></p>
 <img src="Screens/WCC-WCR_PDC.gif" alt="WC Vanilla replacer" width="720">
 <pre><code>-&gt; Gatling turrets act now as PDCs, they will shoot down incoming missiles
 -&gt; Gatling tracer is now Orange and visible up to 5km
@@ -386,7 +479,8 @@ Large &amp; Small Railgun Sabots:   + Increased Uranium x3
 </code></pre>
 <h3 id="weapons">Weapons</h3>
 <pre><code>12 Rocket Launchers
-12 Railguns
+16 Large Railguns
+8  Small Railguns
 15 of each Turrets
 15 CTC
 </code></pre>
@@ -427,10 +521,13 @@ Large &amp; Small Railgun Sabots:   + Increased Uranium x3
 <h1 id="credits">Credits</h1>
 <p>Weaponcore: Darkstar &amp; al
 Relative Top Speed: Gauge
+Elite Dangerous - FSD Supercruise: Dorimanx &amp; Specter
 Freight Contract: Patrick
 Store block: diK
+Nebula: Jakaria
 Modular Encounter System: Meridius_IX / Lucas
-KMDI Ships: Papple2</p>
+KMDI Ships: Papple2
+VME Ships: Taidyr</p>
 <p>Trade Hubs:</p>
 <ul>
 <li>Anshar Station: Cross-1 Research Station by Trav</li>
@@ -438,7 +535,7 @@ KMDI Ships: Papple2</p>
 <li>Zorya Station: Hydrogen Refinery by Vomsay</li>
 </ul>
 
-        
-        
-    </body>
-    </html>
+            
+            
+        </body>
+        </html>
