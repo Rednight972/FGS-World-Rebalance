@@ -48,7 +48,7 @@ The world is divided in 3 zones:
 
 It's the main Trading Hub where you can buy everything **except Gravity & Reactor components**
 
-And the only host of *Type One Energy* (**Uranium supplier**) and *Nariman Dynamics* (**Ammo and Zonechips supplier**)
+And the only host of *Type One Energy* (**Uranium supplier**) and *Nariman Dynamics* (**Ammo, Guidance System and Zonechips supplier**)
 
 ### Anchar Station: Research Hub
 <img src="Screens/M-Anchar-Station-small.png" alt="Anchar Station" width="720">
@@ -202,9 +202,11 @@ A jetpack, a grinder and a handful of bottles was all what was needed to beat th
 ## Suit
 * Oxygen consumption is now 130% of the vanilla version
 * Suit's oxygen refill will only happen at a Kit, MedBay or inside a cockpit
+
 You WILL have to open your visor in a pressurized environment to not deplete your O2 and die
 * Power consumption in extreme conditions is now 1.5 from 2.5
-You'll have power for longer in cold or hot environment
+
+You will have power for longer in cold or hot environments
 
 ## Jetpack
 * H2 efficiency is halved
@@ -215,14 +217,15 @@ You wont be able to stay in the air on planet as long as before and falling from
 
 # MES PVE NPC Factions
 * Knighmare Defense Industries (very difficult encounters)
-<img src="Screens/N-KMDI-small.png" alt="Knighmare Defense Industries" width="720">
-
   * They will guard fiercely the Lutecia Hot Spot
   * Players will have to come with combat ships to mine or will have to hide/flee
   * Custom made for the scenario
+  <img src="Screens/N-KMDI-small.png" alt="Knighmare Defense Industries" width="720">
+
 * Valkyrja Mad Eagles (difficult encounters)
   * An aggressive pirate faction
   * Custom made for the scenario
+  
 * Reavers 
   * As a reminder, your grids will have a broadcast on at all time, so be extra cautious or they'll come for you
 * Imber
@@ -231,8 +234,9 @@ You wont be able to stay in the air on planet as long as before and falling from
 * SPRTE
 
 # World Navigation, Comms & Combat
-    The world comes with a specially made Dynamic Max Speed mod,
-    custom WeaponCore Vanilla replacer with new particles, Thrust Signature and Jump Drive Inhibitor
+    The world comes with a specially made Dynamic Max Speed,
+    Thrust Signature and Jump Drive Inhibitor mods
+    with a custom WeaponCore Vanilla replacer with new particles 
 
 ## Navigation: Dynamic Max Speed
 <img src="Screens/WCC-RTS-small.png" alt="Relative Top Speed" width="720">
@@ -244,6 +248,7 @@ You wont be able to stay in the air on planet as long as before and falling from
     Your speed will increase linearly going from the planet's surface to space (40km)
 
 The Thrust to Weight Ratio will influence your cruise speed and max boost speed: *be careful when building* :D
+
 Having a JumpDrive on board will give you better boost speed
 
 ## Navigation: Hydrogen rebalance
@@ -266,7 +271,8 @@ Having a JumpDrive on board will give you better boost speed
     thrusters/gravity drive or have active power producers
     Average ships will be visible up to 30km during thrust, be careful how you navigate
     or get spotted!
-    Thruster plumes are visible up to 8km
+
+    Large thrusters have now a flame particle that will be visible up to 20kms
 <img src="Screens/T-Thruster_Plume.png" alt="Thrust Signature" width="720">
 
 ## Comms: Antennas
@@ -313,8 +319,8 @@ Luyten use Weaponcore to have a better and smoother combat experience:
 **4km/3km Cannon range**
 
     -> Artillery range is 4km and Vanilla damage
-    -> Assault Canon range is 3km and Vanilla damage
-    -> Assault Canon shell tracers now have a red hue
+    -> Assault Cannons range is 3km and Vanilla damage
+    -> Assault Cannons shell tracers now have a red hue
     This is for better visual contrast from Artillery Shells
     
 **1.5km CQB**
@@ -333,6 +339,7 @@ Luyten use Weaponcore to have a better and smoother combat experience:
     -> Interior turret is same as Vanilla
 
 This rebalance is done to make ships roles more contrasted: ship speeds, armouring and weapon loadouts are now linked
+
 Paired with the new component progression and power consumption, I hope fleets will be more interesting to design and fight with
 
 Note: *this rebalance was done with your existing blueprints in mind.
@@ -399,12 +406,18 @@ To fix those weaknesses the following rules applies:
     8 Respawn points (Survival Kits & Medical Rooms)
 
 # Credits
-Weaponcore: Darkstar & al
-Store block: diK
-Nebula: Jakaria
-Modular Encounter System: Meridius_IX / Lucas
-KMDI Ships: Papple2
-VME Ships: Taidyr
+Mods:
+* Weaponcore: Darkstar & al
+* Store block: diK
+* Nebula: Jakaria
+* Modular Encounter System: Meridius_IX / Lucas
+* Dynamic Max Speed, Thrust Signature, Physical Freight: Rednight
+
+Custom VFX & SFX: Rednight
+
+Ships Blueprints:
+* KMDI Ships: Papple2
+* VME Ships: Taidyr
 
 Trade Hubs:
 * Anshar Station: Cross-1 Research Station by Trav
