@@ -65,7 +65,7 @@ They are in high demand of ingots to power their labs
 Zorya Station was build by *G.C. Metals & Cryogenics* in conjunction with *Emerling-Voss Minerals*
 
 This is the home of everything **Ore & Ingot related**
-You can also sell grids here for space cash
+You can also sell grids here for space cash and buy basic ships there
 
 ## Hotspots
 ### Lutecia Hot spot: Uranium cluster
@@ -100,12 +100,6 @@ Don't get spotted or come with support
     -> H2 & O2 Gas
     Presence: Anchar Station - Research Station
 
-| <img src="Screens/F-EMV.png" alt="EMV" width="32"> | Ore Provider: Emerling-Voss Minerals (Wenna Hemingway) |
-| :--------------------------------------------- | :----------------------------------------------------- |
-
-    -> Every ores Except Uranium
-    Presence: Eos Station - Central Hub, Zorya Station - Outer Hub
-
 | <img src="Screens/F-NMD.png" alt="NMD" width="32"> | Component Provider: Nariman Dynamics (Warwick Wishmonger) |
 | :--------------------------------------------- | :-------------------------------------------------------- |
 
@@ -121,16 +115,33 @@ Don't get spotted or come with support
     -> H2 & O2 Gas (Zorya)
     Presence: Eos Station - Central Hub, Zorya Station - Outer Hub
 
+| <img src="Screens/F-EMV.png" alt="EMV" width="32"> | Ore Provider: Emerling-Voss Minerals (Wenna Hemingway) |
+| :--------------------------------------------- | :----------------------------------------------------- |
+
+    -> Every ores Except Uranium
+    Presence: Eos Station - Central Hub, Zorya Station - Outer Hub
+
+
+| <img src="Screens/F-TUN.png" alt="TUN" width="32"> | Physical Freight: Transport Union (Susan Morningstar) |
+| :---------------------------------------------- | :------------------------------------------------------------ |
+
+    -> Physical freight
+    -> Beginner Ships (Zorya)
+    Presence: Eos Station, Zorya Station, Anchar Station
+
 ## Gameplay loops
 **The economy system is now in a central place to give short and long term goals**
 
-Progression is made by either *mining*, *trading*, *hauling contracts*, *hunting* or *scavenging* until endgame (Uranium, Reactors, Gravity Drives)
+Progression is made by either *mining*, *trading*, *hauling cargo*, *hunting* or *scavenging* until endgame (Uranium, Reactors, Gravity Drives)
 
     Players will have to make space cash or pirate NPCs to advance to end game
     Players will have access to basic space faring capabilities (Buffed hydro and low/mid energy sources)
 
-Added physical cargo hauling contracts so your Hauler builds are now useful!
+Added physical cargo hauling so your Hauler builds are now useful!
+    Those physical cargo are purchasable at any Trade Station and will automatically grant you a nice reward when you navigate to another Trade Station
+
 Added a Grid to Space cash mechanic for you hunters!
+    If you hate grinding the grid you hunted, you can now take them to a specific station and sell them for sweet cash :)
 
 <img src="Screens/G-Hauling-small.png" alt="Physical Cargo" width="720">
 
@@ -146,6 +157,8 @@ Decreased Ore collection ratios:
   
 It was way too easy to produce big projects after a single mining campaign
 
+Regular Asteroids (no ice, no uranium) only spawn in a 100km radius of all Hot Spots (Borrelli, Lutecia, Hyakutake)
+
 ## Ingots & Components
 Stone is now only processed in the Survival Kit, lets go back to the old SE!
 
@@ -153,26 +166,39 @@ Silicon is now required for:
 * Construction Components 0.1kg per component
 * Motors 0.5kg per component
 * Detector Components 3kg per component
+
+Nickel is now required for:
+* Construction Components 0.1kg per component
+* Computers 0.01kg per component
+* Radio Communication Components 3kg per component
   
 Silver ingots are now included in the production of:
 * Superconductor : 0.5kg per component
 * Thruster components: 0.5kg per component
-This is to make silver mining more relevant instead of the current *mine one node and be done*
+  
+This is to make Silicon, Silver and Nickel mining more relevant instead of the current *mine one node and be done*
 
 Gravel production is now reduced by a factor of 10 and has no usefulness for the moment
 
 ## Blocks
 ### Energy Generation
-Some energy generation blocks have been buffed to accommodate the new progression to end game
+Some energy generation blocks have been buffed or nerfed to accommodate the new progression and end game
+
+#### Solar Panels
+Power Output x1.5 from 0.16 to 0.240MW and 0.04 to 0.06MW
+
 #### Hydro Engines
 Max power output doubled from 5 to 10MW and 0.5 to 1MW
 
 Fuel efficiency doubled from 0.01 to 0.02
-#### Solar Panel
-Power Output doubled from 0.16 to 0.32MW and 0.04 to 0.08MW
+
+#### Reactors
+Reactors will consume twice more uranium than in vanilla.
+It will compensate the lack of JumpDrive charge when moving around the system and act as a money sink
 
 ### Jump Drive
 Recipe: Changed Gravity Generator requirement to 100 Superconductors
+Added a small grid version
 
 ### Safe Zone
 Recipe: Changed Gravity Generator requirement to 300 Superconductors
@@ -212,56 +238,37 @@ You will have power for longer in cold or hot environments
 * H2 efficiency is halved
 * Jetpack thrust is halved
 * Slow down speed is 1/5 of vanilla
+* Max speed will be:
+  * 30% of the sector max speed
+  * This works with relative dampening 
   
 You wont be able to stay in the air on planet as long as before and falling from high place is now risky, better have an utility ship or a ship printer early/mid game
 
 # MES PVE NPC Factions
-* Knighmare Defense Industries (very difficult encounters)
+* **Knighmare Defense Industries** (very difficult encounters)
   * They will guard fiercely the Lutecia Hot Spot
   * Players will have to come with combat ships to mine or will have to hide/flee
-  * Custom made for the scenario
+  * Custom made for the scenario with special **high value loot**
   <img src="Screens/N-KMDI-small.png" alt="Knighmare Defense Industries" width="720">
 
-* Valkyrja Mad Eagles (difficult encounters)
+* **Valkyrja Mad Eagles** (difficult encounters)
   * An aggressive pirate faction
-  * Custom made for the scenario
+  * Custom made for the scenario with special **high value loot**
+  <img src="Screens/N-VME-small.png" alt="Valkyrja Mad Eagles" width="720">
+
+* **Transport Union**
+  * Neutral faction of space cargo ships
   
-* Reavers 
+* **Reavers**
   * As a reminder, your grids will have a broadcast on at all time, so be extra cautious or they'll come for you
-* Imber
-* Incon
-* Parallax
-* SPRTE
+* **Imber**
+* **Incon**
+* **Parallax**
+
 
 # World Navigation, Comms & Combat
     The world comes with a specially made Dynamic Max Speed,
-    Thrust Signature and Jump Drive Inhibitor mods
-    with a custom WeaponCore Vanilla replacer with new particles 
-
-## Navigation: Dynamic Max Speed
-<img src="Screens/WCC-RTS-small.png" alt="Relative Top Speed" width="720">
-
-    There is now 3 max speeds:
-        Fast Space Zone: 5000m/s
-        Slow Space Zones (around POIs): 500m/s
-        Planets: 150m/s
-    Your speed will increase linearly going from the planet's surface to space (40km)
-
-The Thrust to Weight Ratio will influence your cruise speed and max boost speed: *be careful when building* :D
-
-Having a JumpDrive on board will give you better boost speed
-
-## Navigation: Hydrogen rebalance
-
-    Large hydrogen thrusters have a x3 thrust increase
-    Small hydrogen thrusters have a x1.25 thrust increase
-    Hydrogen efficiency buffed by 1.38 as it'll be used 
-    for power and travel in this rebalance
-
-## Navigation: JumpDrive
-
-    JumpDrive no longer provide jumping capabilities, however it'll give a substantial boost to your grid Max Speed under thrust.
-    Cruising speed will remain the same
+    Thrust Signature and with a custom WeaponCore Vanilla replacer with new particles 
 
 ## Comms: Thrust Signature
 <img src="Screens/WCC-TS.gif" alt="Thrust Signature" width="720">
@@ -272,8 +279,57 @@ Having a JumpDrive on board will give you better boost speed
     Average ships will be visible up to 30km during thrust, be careful how you navigate
     or get spotted!
 
-    Large thrusters have now a flame particle that will be visible up to 20kms
+    Large thrusters have now a flame particle
+    that will be visible up to 20km
 <img src="Screens/T-Thruster_Plume.png" alt="Thrust Signature" width="720">
+
+## Navigation: Dynamic Max Speed
+<img src="Screens/WCC-RTS-small.png" alt="Relative Top Speed" width="720">
+
+    There is now 3 max speeds:
+        Fast Space Zone: 25000m/s
+        Slow Space Zones (around POIs): 500m/s
+        Planets: 150m/s
+    Your speed will increase linearly going from the planet's surface to space (40km)
+
+The Thrust to Weight Ratio will influence your cruise speed and max boost speed: *be careful when building* :D
+
+Having a JumpDrive on board will give you better boost speed
+
+## Navigation: Hydrogen rebalance
+
+    Large hydrogen thrusters have a x4 thrust increase
+    Small hydrogen thrusters have a x1.5 thrust increase
+    Hydrogen efficiency buffed, as it'll be used 
+    for power and travel in this rebalance:
+    x1.3 for large thrusters
+    x1.1 for small thrusters
+
+## Navigation: JumpDrive
+
+JumpDrive no longer provide jumping capabilities
+They now offer 2 benefits:
+##### Access to Transit High Speed
+The transit system allows you to go up to 10km/s
+Your grid must be at 1000m/s to enable transit speed
+This will cost power and H2
+You can use the transit system if:
+* Have a Jump Drive
+* At least 1 functional large thruster in the forward direction
+* Multiple Jump Drives does not grant any benefits*
+
+## Navigation: RCS Maneuvering Thrusters
+<img src="Screens/T-MTS.gif" alt="Maneuvering Thrusters" width="540">
+
+Small hydrogen thrusters can now act as RCS maneuvering thrusters
+All rotational input will be enhanced at the cost of 1.25 the max fuel consumption
+Your grid will be much more nimble with them off
+
+To activate the RCS, go to the desired thruster in the terminal and
+
+##### Better boost speed
+Your grid will be able to reach a high max speed under thrust
+Cruising speed will remain the same
 
 ## Comms: Antennas
     Laser Antennas do not need line of sight anymore
@@ -284,10 +340,11 @@ Having a JumpDrive on board will give you better boost speed
 Luyten use Weaponcore to have a better and smoother combat experience: 
 **Combat has now 4 engagement ranges:**
 <img src="Screens/WCC-Ranges.png" alt="WC Vanilla replacer" width="1260">
+<img src="Screens/WCC-WC.gif" alt="WC Vanilla replacer" width="540">
 
 **10km to 5km Torpedo Range**
 
-<img src="Screens/WCC-WCR_Torpedo.gif" alt="WC Vanilla replacer" width="720">
+<img src="Screens/WCC-WCR_Torpedo.gif" alt="WC Vanilla replacer" width="540">
 
     -> Static rocket launchers now fire homing torpedoes
     they have high damage but can be shot down by PDCs
@@ -298,7 +355,7 @@ Luyten use Weaponcore to have a better and smoother combat experience:
 
 **6km Railgun range**
 
-<img src="Screens/WCC-WCR.gif" alt="WC Vanilla replacer" width="720">
+<img src="Screens/WCC-WCR.gif" alt="WC Vanilla replacer" width="540">
 
     -> Large Railgun charge is now 30s from 1min
     -> Large Railgun powerdraw increased from 38MW to 76MW (x2)
@@ -325,7 +382,7 @@ Luyten use Weaponcore to have a better and smoother combat experience:
     
 **1.5km CQB**
 
-<img src="Screens/WCC-WCR_PDC.gif" alt="WC Vanilla replacer" width="720">
+<img src="Screens/WCC-WCR_PDC.gif" alt="WC Vanilla replacer" width="540">
 
     -> Gatling turrets act now as PDCs, they will shoot down incoming missiles
     -> Gatling tracer is now Orange and visible up to 10km
@@ -360,8 +417,8 @@ To fix those weaknesses the following rules applies:
 ## Max Per Grid
 ### Tools
     25 Welders
-    25 Grinders
-    25 Drills
+    6 Grinders
+    6 Drills
     2 Build and Repairs
 ### Productions
     12 Refineries (Basic & Normal)
@@ -371,8 +428,8 @@ To fix those weaknesses the following rules applies:
     10 Oxygen Tanks
 ### Weapons
     12 Rocket Launchers
-    16 Large Railguns
-    8  Small Railguns
+    8 Large Railguns
+    16  Small Railguns
     15 of each Turrets
     15 CTC
 ### Misc
@@ -383,7 +440,7 @@ To fix those weaknesses the following rules applies:
 ## Max Per Players
 ### Tools
     50 Welders
-    50 Grinders
+    25 Grinders
     25 Drills
     8 Build and Repairs
 ### Productions
@@ -409,17 +466,30 @@ To fix those weaknesses the following rules applies:
 Mods:
 * Weaponcore: Darkstar & al
 * Store block: diK
-* Nebula: Jakaria
 * Modular Encounter System: Meridius_IX / Lucas
-* Dynamic Max Speed, Thrust Signature, Physical Freight: Rednight
+* Dynamic Max Speed, Thrust Signature: Rednight
+* Transit System, Physical Freight: Rednight
+* RCS Thrusters: Rednight
+* WCVanilla Weapon Replacer: Rednight
 
 Custom VFX & SFX: Rednight
+
+Jerry Cants & Fuel Tanks: Zardo's Fuel Extractor Mod
+
+Planets:
+* Planet 26: Captain Arthur
+* Luma: Major Jon
+* Teal: Major Jon
+* Kimi (Zorya): Major Jon
+* Qun (Eos): Major Jon
+* Tohil (Anshar): Major Jon
 
 Ships Blueprints:
 * KMDI Ships: Papple2
 * VME Ships: Taidyr
+* TNU Ships: Rednight
 
 Trade Hubs:
 * Anshar Station: Cross-1 Research Station by Trav
-* Eos Station: NEXUS - Deep Space Outpost by MACH Velocity
+* Eos Station: Rednight
 * Zorya Station: Hydrogen Refinery by Vomsay
