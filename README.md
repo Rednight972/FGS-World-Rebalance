@@ -27,6 +27,7 @@ The idea behind Luyten was to promote traveling around the system, make grouping
 **No Uranium ore** is present in asteroids, players can buy it from one NPC Provider (**Type One Energy**) or mine it at the Dangerous Uranium Hotspot (**Lutecia Hotspot - KMDI controlled**)
 
 **Reactor and Gravity components are now end game** and locked up behind a NPC Provider (**Tech Noir**)
+**Railgun and Torpedo components are now end game** and locked up behind a NPC Provider (**Nariman Dynamics**)
 
 -> Playing with gravity and high power density generation is now  more "active" with money-to-component grind and money-to-uranium grind
 
@@ -319,7 +320,7 @@ You can use the transit system if:
 * Multiple Jump Drives does not grant any benefits*
 
 ## Navigation: RCS Maneuvering Thrusters
-<img src="Screens/T-MTS.gif" alt="Maneuvering Thrusters" width="540">
+<img src="Screens/T-MTS.gif" alt="Maneuvering Thrusters">
 
 Small hydrogen thrusters can now act as RCS maneuvering thrusters
 All rotational input will be enhanced at the cost of 1.25 the max fuel consumption
@@ -340,11 +341,11 @@ Cruising speed will remain the same
 Luyten use Weaponcore to have a better and smoother combat experience: 
 **Combat has now 4 engagement ranges:**
 <img src="Screens/WCC-Ranges.png" alt="WC Vanilla replacer" width="1260">
-<img src="Screens/WCC-WC.gif" alt="WC Vanilla replacer" width="540">
+<img src="Screens/WCC-WC.gif" alt="WC Vanilla replacer">
 
 **10km to 5km Torpedo Range**
 
-<img src="Screens/WCC-WCR_Torpedo.gif" alt="WC Vanilla replacer" width="540">
+<img src="Screens/WCC-WCR_Torpedo.gif" alt="WC Vanilla replacer">
 
     -> Static rocket launchers now fire homing torpedoes
     they have high damage but can be shot down by PDCs
@@ -355,7 +356,7 @@ Luyten use Weaponcore to have a better and smoother combat experience:
 
 **6km Railgun range**
 
-<img src="Screens/WCC-WCR.gif" alt="WC Vanilla replacer" width="540">
+<img src="Screens/WCC-WCR-Small.gif" alt="WC Vanilla replacer">
 
     -> Large Railgun charge is now 30s from 1min
     -> Large Railgun powerdraw increased from 38MW to 76MW (x2)
