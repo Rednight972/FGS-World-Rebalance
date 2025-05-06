@@ -13,7 +13,7 @@
 
 <img src="Screens/S-Mars-small.png" alt="Welcome" width="720">
 
-* **Luma** : A gas-giant (Start on its Satellite)
+* **Luma** : A gas-giant (Rover start on its Satellite - 1g)
     * Satellite: **Teal**
 
 <img src="Screens/S-Triton-small.png" alt="Welcome" width="720">
@@ -27,9 +27,9 @@ The idea behind Luyten was to promote traveling around the system, make grouping
 **No Uranium ore** is present in asteroids, players can buy it from one NPC Provider (**Type One Energy**) or mine it at the Dangerous Uranium Hotspot (**Lutecia Hotspot - KMDI controlled**)
 
 **Reactor and Gravity components are now end game** and locked up behind a NPC Provider (**Tech Noir**)
-**Railgun and Torpedo components are now end game** and locked up behind a NPC Provider (**Nariman Dynamics**)
+**Railgun and Torpedo components are now end game** and locked up behind a NPC Provider (**Tech Noir** and **Nariman Dynamics**)
 
--> Playing with gravity and high power density generation is now  more "active" with money-to-component grind and money-to-uranium grind
+-> Playing with gravity and high power density generation is now more "active" with money-to-component grind and money-to-uranium grind
 
 -> This will make end game ships and bases use the Economy System
 
@@ -47,7 +47,7 @@ The world is divided in 3 zones:
 
 *Eos Station* is at the center of system
 
-It's the main Trading Hub where you can buy everything **except Gravity & Reactor components**
+It's the main Trading Hub where you can buy everything **except Gravity, Reactor components**
 
 And the only host of *Type One Energy* (**Uranium supplier**) and *Nariman Dynamics* (**Ammo, Guidance System and Zonechips supplier**)
 
@@ -65,8 +65,8 @@ They are in high demand of ingots to power their labs
 
 Zorya Station was build by *G.C. Metals & Cryogenics* in conjunction with *Emerling-Voss Minerals*
 
-This is the home of everything **Ore & Ingot related**
-You can also sell grids here for space cash and buy basic ships there
+This is the home of everything **Ore, Ingot & Gas related**
+***You can also sell grids here for space cash and buy basic ships***
 
 ## Hotspots
 ### Lutecia Hot spot: Uranium cluster
@@ -75,55 +75,60 @@ A small cluster of rather large pure Uranite asteroids and defended by the KMDI 
 <img src="Screens/H-Lutecia-small.png" alt="Lutecia Hot Spot" width="720">
 
 Don't get spotted or come with support
+Normal asteroid will spawn in a 100km radius from this cluster for space mining
 
 ### Hyakutake Hot spot: Fragmented Ice comet
 <img src="Screens/H-Hyakutake-small.png" alt="Hyakutake Hot spot" width="720">
 
+Normal asteroid will spawn in a 100km radius from this cluster for space mining
+
 ### Borrelly Hot spot: Ice cluster
 <img src="Screens/H-Borrelly-small.png" alt="Borrelly Hot spot" width="720">
 
+Normal asteroid will spawn in a 100km radius from this cluster for space mining
+
 ## NPC Providers
-| <img src="Screens/F-TEO.png" alt="TEO" width="32"> | Energy Provider: Type One Energy (Dan Wu) |
+| <img src="Screens/F-TEO.png" alt="TEO" width="32"> | Energy Provider: Type One Energy (CEO: Dan Wu) |
 | :--------------------------------------------- | :---------------------------------------- |
 
     -> Uranium Ingots
     -> H2 & O2 Gas
     Presence: Eos Station - Central Hub
 
-| <img src="Screens/F-TCN.png" alt="TCN" width="32"> | Tech Provider: Tech Noir (Mike Grey) |
+| <img src="Screens/F-TCN.png" alt="TCN" width="32"> | Tech Provider: Tech Noir (CEO: Mike Grey) |
 | :--------------------------------------------- | :----------------------------------- |
 
     -> Reactor components
     -> Gravity components
     -> Accumulators
     -> Nanite containers
-    -> All other components except Guidance Systems
+    -> All other components except Guidance System
     -> H2 & O2 Gas
     Presence: Anchar Station - Research Station
 
-| <img src="Screens/F-NMD.png" alt="NMD" width="32"> | Component Provider: Nariman Dynamics (Warwick Wishmonger) |
+| <img src="Screens/F-NMD.png" alt="NMD" width="32"> | Component Provider: Nariman Dynamics (CEO: Warwick Wishmonger) |
 | :--------------------------------------------- | :-------------------------------------------------------- |
 
     -> Every components except Reactor, Gravity, Accumulator & Nanite Containers
     -> ZoneChips
-    -> Missiles
+    -> Guidance System
     Presence: Eos Station - Central Hub
 
-| <img src="Screens/F-GCMC.png" alt="GCMC" width="32"> | Refined goods Provider: G.C. Metals & Cryogenics (David Zeus) |
+| <img src="Screens/F-GCMC.png" alt="GCMC" width="32"> | Refined goods Provider: G.C. Metals & Cryogenics (CEO: David Zeus) |
 | :---------------------------------------------- | :------------------------------------------------------------ |
 
     -> Every ingots except Uranium
-    -> H2 & O2 Gas (Zorya)
+    -> H2 & O2 Gas
     Presence: Eos Station - Central Hub, Zorya Station - Outer Hub
 
-| <img src="Screens/F-EMV.png" alt="EMV" width="32"> | Ore Provider: Emerling-Voss Minerals (Wenna Hemingway) |
+| <img src="Screens/F-EMV.png" alt="EMV" width="32"> | Ore Provider: Emerling-Voss Minerals (CEO: Wenna Hemingway) |
 | :--------------------------------------------- | :----------------------------------------------------- |
 
     -> Every ores Except Uranium
     Presence: Eos Station - Central Hub, Zorya Station - Outer Hub
 
 
-| <img src="Screens/F-TUN.png" alt="TUN" width="32"> | Physical Freight: Transport Union (Susan Morningstar) |
+| <img src="Screens/F-TUN.png" alt="TUN" width="32"> | Physical Freight: Transport Union (CEO: Susan Morningstar) |
 | :---------------------------------------------- | :------------------------------------------------------------ |
 
     -> Physical freight
@@ -136,15 +141,16 @@ Don't get spotted or come with support
 Progression is made by either *mining*, *trading*, *hauling cargo*, *hunting* or *scavenging* until endgame (Uranium, Reactors, Gravity Drives)
 
     Players will have to make space cash or pirate NPCs to advance to end game
-    Players will have access to basic space faring capabilities (Buffed hydro and low/mid energy sources)
+    Players will have access to basic space faring capabilities
+    (Buffed hydro and low/mid energy sources)
 
 Added physical cargo hauling so your Hauler builds are now useful!
     Those physical cargo are purchasable at any Trade Station and will automatically grant you a nice reward when you navigate to another Trade Station
 
+<img src="Screens/G-Hauling-small.png" alt="Physical Cargo" width="720">
+
 Added a Grid to Space cash mechanic for you hunters!
     If you hate grinding the grid you hunted, you can now take them to a specific station and sell them for sweet cash :)
-
-<img src="Screens/G-Hauling-small.png" alt="Physical Cargo" width="720">
 
 # Core Game Rebalance
 ## Mining
@@ -191,8 +197,6 @@ Power Output x1.5 from 0.16 to 0.240MW and 0.04 to 0.06MW
 #### Hydro Engines
 Max power output doubled from 5 to 10MW and 0.5 to 1MW
 
-Fuel efficiency doubled from 0.01 to 0.02
-
 #### Reactors
 Reactors will consume twice more uranium than in vanilla.
 It will compensate the lack of JumpDrive charge when moving around the system and act as a money sink
@@ -223,8 +227,13 @@ Large Ore Detector range increased from 150 to 300m
 ### Hatch Doors
 Doubled opening and closing speed (from 2 to 4) to make it inline with normal sliding door
 
-# Engineer suit & Jetpack
+# Engineer, suit & Jetpack
 A jetpack, a grinder and a handful of bottles was all what was needed to beat the game, not anymore. The following nerf are now applied:
+
+## Engineer
+Griding enemy non functional block (armor block, interior wall, etc..) is now nerfed:
+No more bypassing doors by griding the adjacent armor blocks.
+This will not apply to Factorum grids for obvious reasons.
 
 ## Suit
 * Oxygen consumption is now 130% of the vanilla version
@@ -244,10 +253,12 @@ You will have power for longer in cold or hot environments
   * This works with relative dampening 
   
 You wont be able to stay in the air on planet as long as before and falling from high place is now risky, better have an utility ship or a ship printer early/mid game
+This coupled with the capped speed will promote the usage of grids to accomplish things
+you are a small fleshy thing after all!
 
 # MES PVE NPC Factions
 * **Knighmare Defense Industries** (very difficult encounters)
-  * They will guard fiercely the Lutecia Hot Spot
+  * They will guard fiercely the Lutecia Hot Spot and sometimes spawn in space
   * Players will have to come with combat ships to mine or will have to hide/flee
   * Custom made for the scenario with special **high value loot**
   <img src="Screens/N-KMDI-small.png" alt="Knighmare Defense Industries" width="720">
@@ -266,29 +277,17 @@ You wont be able to stay in the air on planet as long as before and falling from
 * **Incon**
 * **Parallax**
 
-
 # World Navigation, Comms & Combat
     The world comes with a specially made Dynamic Max Speed,
-    Thrust Signature and with a custom WeaponCore Vanilla replacer with new particles 
-
-## Comms: Thrust Signature
-<img src="Screens/WCC-TS.gif" alt="Thrust Signature" width="720">
-
-    All player grids must have at least one beacon
-    That beacon will emit your signature when you have active 
-    thrusters/gravity drive or have active power producers
-    Average ships will be visible up to 30km during thrust, be careful how you navigate
-    or get spotted!
-
-    Large thrusters have now a flame particle
-    that will be visible up to 20km
-<img src="Screens/T-Thruster_Plume.png" alt="Thrust Signature" width="720">
+    Grid Signature, Transit system replacing Jump Drive mechanics
+    RCS Maneuvering Thrusters (yes my immersion!)
+    and with a custom WeaponCore Vanilla replacer with new particles and blocks! 
 
 ## Navigation: Dynamic Max Speed
 <img src="Screens/WCC-RTS-small.png" alt="Relative Top Speed" width="720">
 
     There is now 3 max speeds:
-        Fast Space Zone: 25000m/s
+        Fast Space Zone: 2500m/s
         Slow Space Zones (around POIs): 500m/s
         Planets: 150m/s
     Your speed will increase linearly going from the planet's surface to space (40km)
@@ -297,14 +296,40 @@ The Thrust to Weight Ratio will influence your cruise speed and max boost speed:
 
 Having a JumpDrive on board will give you better boost speed
 
+## Comms: Grid Signature
+<img src="Screens/WCC-TS.gif" alt="Thrust Signature" width="720">
+
+    All player grids must have at least one beacon
+    That beacon will emit your signature when you have active 
+    thrusters/gravity drive or power producers
+    Average ships will be visible up to 30km during thrust, be careful how you navigate
+    or get spotted!
+
+    Large thrusters have now a plume particle that will be visible up to 20km
+<img src="Screens/T-Thruster_Plume.png" alt="Thrust Signature" width="720">
+
 ## Navigation: Hydrogen rebalance
 
-    Large hydrogen thrusters have a x4 thrust increase
-    Small hydrogen thrusters have a x1.5 thrust increase
+    Large grid hydrogen thrusters have a x4 thrust increase
+    Small grid hydrogen thrusters have a x1.5 thrust increase
     Hydrogen efficiency buffed, as it'll be used 
     for power and travel in this rebalance:
-    x1.3 for large thrusters
-    x1.1 for small thrusters
+    x1.3 for large grid thrusters
+    x1.1 for small grid thrusters
+
+## Navigation: RCS Maneuvering Thrusters
+<img src="Screens/T-MTS.gif" alt="Maneuvering Thrusters">
+
+Small hydrogen thrusters can now act as RCS maneuvering thrusters
+All rotational input will be enhanced at the cost of 1.25 the max fuel consumption
+Your grid will be much more nimble with them on
+
+To activate the RCS, go to the desired thruster in the terminal and flip Use as RCS on
+A master switch terminal control is present in Cockpit's menu or use SHIFT+R
+
+You can also decouple RCS dampening by pressing SHIFT+X:
+RCS will no more dampen the rotation if the grid's dampeners are OFF
+Note: You'll still have gyro dampening at all time
 
 ## Navigation: JumpDrive
 
@@ -317,16 +342,8 @@ This will cost power and H2
 You can use the transit system if:
 * Have a Jump Drive
 * At least 1 functional large thruster in the forward direction
-* Multiple Jump Drives does not grant any benefits*
-
-## Navigation: RCS Maneuvering Thrusters
-<img src="Screens/T-MTS.gif" alt="Maneuvering Thrusters">
-
-Small hydrogen thrusters can now act as RCS maneuvering thrusters
-All rotational input will be enhanced at the cost of 1.25 the max fuel consumption
-Your grid will be much more nimble with them off
-
-To activate the RCS, go to the desired thruster in the terminal and
+  
+*Multiple Jump Drives does not grant any benefits*
 
 ##### Better boost speed
 Your grid will be able to reach a high max speed under thrust
@@ -349,8 +366,8 @@ Luyten use Weaponcore to have a better and smoother combat experience:
 
     -> Static rocket launchers now fire homing torpedoes
     they have high damage but can be shot down by PDCs
-    -> They have a max speed of 400:150m/s (large:small)
-    -> Launchers will overheat after shooting 4 torpedoes
+    -> They have a max speed of 650:450m/s (large:small)
+    -> Launchers will overheat after shooting 4:large or 8:small torpedoes
     -> Reload speed of 40s after 8 torpedo shots
     This make PDC mandatory on all ships, good acceleration/maneuverability helps too
 
@@ -422,17 +439,22 @@ To fix those weaknesses the following rules applies:
     6 Drills
     2 Build and Repairs
 ### Productions
-    12 Refineries (Basic & Normal)
-    12 Assemblers (Basic & Normal)
+    12 Refineries (Basic, Normal & Prototech)
+    12 Assemblers (Basic, Normal & Prototech)
     32 O2/H2 Generators
     30 Hydrogen Tanks
     10 Oxygen Tanks
 ### Weapons
     12 Rocket Launchers
-    8 Large Railguns
-    16  Small Railguns
-    15 of each Turrets
+    8 Large Railguns (Fixed & Turrets)
+    16  Small Railguns (Fixed & Turrets)
+    15 Gatling Turrets
+    15 Assault Canon Turrets
+    15 Artillery Turrets
     15 CTC
+    1 Radar
+
+    Most weapons have exclusion zones arround them to avoid spamming
 ### Misc
     3 Respawn points (Survival Kits & Medical Rooms)
     56 Gravity generators
@@ -448,9 +470,6 @@ To fix those weaknesses the following rules applies:
     24 Refineries (Basic & Normal)
     24 Assemblers (Basic & Normal)
     88 O2/H2 Generators
-### Weapons
-    24 Rocket Launchers
-    24 Railguns
 ### Automation
     30 Programmable Blocks
     30 Event controllers
@@ -464,33 +483,35 @@ To fix those weaknesses the following rules applies:
     8 Respawn points (Survival Kits & Medical Rooms)
 
 # Credits
-Mods:
-* Weaponcore: Darkstar & al
-* Store block: diK
-* Modular Encounter System: Meridius_IX / Lucas
-* Dynamic Max Speed, Thrust Signature: Rednight
-* Transit System, Physical Freight: Rednight
-* RCS Thrusters: Rednight
-* WCVanilla Weapon Replacer: Rednight
+## Mods
+* **Weaponcore**: Darkstar & al
+* **Store block**: diK
+* **Modular Encounter System**: Meridius_IX / Lucas
+* **Dynamic Max Speed, Thrust Signature**: Rednight
+* **Transit System, Physical Freight**: Rednight
+* **RCS Thrusters**: Rednight
+* **WCVanilla Weapon Replacer**: Rednight
+* **Custom VFX & SFX**: Rednight
 
-Custom VFX & SFX: Rednight
+## Blocks
+* **Jerry Cants & Fuel Tanks**: Zardo's Fuel Extractor Mod
+* **5x5x5, 7x7x7, 9x9x9 H2 Thruster**: Killerbee77's Larger Thruster Variants
+* **Railgun turrets**: Foltast's Consolidation Rearmament - Vanilla Weapon Pack*
 
-Jerry Cants & Fuel Tanks: Zardo's Fuel Extractor Mod
+## Planets
+* **Planet 26**: Captain Arthur
+* **Luma**: Major Jon
+* **Teal**: Major Jon
+* **Kimi** (Zorya): Major Jon
+* **Qun** (Eos): Major Jon
+* **Tohil** (Anshar): Major Jon
 
-Planets:
-* Planet 26: Captain Arthur
-* Luma: Major Jon
-* Teal: Major Jon
-* Kimi (Zorya): Major Jon
-* Qun (Eos): Major Jon
-* Tohil (Anshar): Major Jon
+## Ships Blueprints
+* **KMDI Ships**: Papple2
+* **VME Ships**: Taidyr
+* **TNU Ships**: Rednight
 
-Ships Blueprints:
-* KMDI Ships: Papple2
-* VME Ships: Taidyr
-* TNU Ships: Rednight
-
-Trade Hubs:
-* Anshar Station: Cross-1 Research Station by Trav
-* Eos Station: Rednight
-* Zorya Station: Hydrogen Refinery by Vomsay
+## Trade Hubs
+* **Anshar Station**: Cross-1 Research Station by Trav
+* **Eos Station**: Rednight
+* **Zorya Station**: Hydrogen Refinery by Vomsay
