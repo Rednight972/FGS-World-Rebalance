@@ -337,18 +337,34 @@ If you hate grinding the grid you hunted, you can now take them to a specific st
 <p>This is to make Silicon, Silver and Nickel mining more relevant instead of the current <em>mine one node and be done</em></p>
 <p>Gravel production is now reduced by a factor of 10 and has no usefulness for the moment</p>
 <h2 id="blocks">Blocks</h2>
-<h3 id="energy-generation">Energy Generation</h3>
-<p>Some energy generation blocks have been buffed or nerfed to accommodate the new progression and end game</p>
+<h3 id="power-generation">Power Generation</h3>
+<p>Some power generation blocks have been buffed or nerfed to accommodate the new progression and end game
+All active power generation blocks have now a shared</p>
+<ul>
+<li>PCU cost of 500</li>
+<li>Block limit per grid of 34</li>
+</ul>
+<p><strong>If you want more power density for the same PCU cost you'll have to progress from the lower tech to higher tech</strong></p>
 <h4 id="solar-panels">Solar Panels</h4>
 <p>Power Output x1.5 from 0.16 to 0.240MW and 0.04 to 0.06MW</p>
 <h4 id="hydro-engines">Hydro Engines</h4>
-<p>Max power output doubled from 5 to 10MW and 0.5 to 1MW</p>
+<p>Max power output doubled from 5 to 10MW and 0.5 to 1MW
+PCU is now 500</p>
 <h4 id="reactors">Reactors</h4>
-<p>Reactors will consume twice more uranium than in vanilla.
-It will compensate the lack of JumpDrive charge when moving around the system and act as a money sink</p>
+<p>Large reactors will consume 2 times more uranium than vanilla
+Small reactors will consume 3 times more uranium than vanilla
+Block limit of 10 per grid
+PCU is now 500</p>
+<p>It will compensate the lack of JumpDrive charge when moving around the system and act as a money sink
+while promoting the use of the large reactors over small reactors spamming</p>
+<h3 id="batteries">Batteries</h3>
+<p>Max input power lowered from 12MW to 8MW
+Block limit of 18 per grid
+PCU is now 500
+<em>This is to promote battery as buffers and not main power sources</em></p>
 <h3 id="jump-drive">Jump Drive</h3>
-<p>Recipe: Changed Gravity Generator requirement to 100 Superconductors
-Added a small grid version</p>
+<p>Recipe: Changed Gravity Generator requirement to 100 Superconductors</p>
+<p>Added a small grid version</p>
 <h3 id="safe-zone">Safe Zone</h3>
 <p>Recipe: Changed Gravity Generator requirement to 300 Superconductors</p>
 <p>Buffed ZoneChips duration x3 (from 60 to 180min)</p>
@@ -465,8 +481,8 @@ Large thrusters have now a plume particle that will be visible up to 20km
 </code></pre>
 <img src="Screens/T-Thruster_Plume.png" alt="Thrust Signature" width="720">
 <h2 id="navigation-hydrogen-rebalance">Navigation: Hydrogen rebalance</h2>
-<pre><code>Large grid hydrogen thrusters have a x4 thrust increase
-Small grid hydrogen thrusters have a x1.5 thrust increase
+<pre><code>Large hydrogen thrusters have a x4 thrust increase
+Small hydrogen thrusters have a x1.5 thrust increase
 Hydrogen efficiency buffed, as it'll be used 
 for power and travel in this rebalance:
 x1.3 for large grid thrusters
@@ -481,7 +497,7 @@ Your grid will be much more nimble with them on</p>
 A master switch terminal control is present in Cockpit's menu or use SHIFT+R</p>
 <p>You can also decouple RCS dampening by pressing SHIFT+X:
 RCS will no more dampen the rotation if the grid's dampeners are OFF
-Note: You'll still have gyro dampening at all time</p>
+Note: You will still have gyro dampening at all time</p>
 <h2 id="navigation-jumpdrive">Navigation: JumpDrive</h2>
 <p>JumpDrive no longer provide jumping capabilities
 They now offer 2 benefits:</p>
@@ -570,6 +586,11 @@ Large &amp; Small Railgun Sabots:   + Increased Uranium x3
 <p>Block spamming is a real performance issue in Space Engineers and does not promote sharing grids between players,</p>
 <p>To fix those weaknesses the following rules applies:</p>
 <h2 id="max-per-grid">Max Per Grid</h2>
+<h3 id="power-generation-1">Power Generation</h3>
+<pre><code>34 of all the following: Reactors, Hydrogen engines and batteries
+10 Reactors
+18 Batteries
+</code></pre>
 <h3 id="tools">Tools</h3>
 <pre><code>25 Welders
 6 Grinders
@@ -586,19 +607,20 @@ Large &amp; Small Railgun Sabots:   + Increased Uranium x3
 <h3 id="weapons">Weapons</h3>
 <pre><code>12 Rocket Launchers
 8 Large Railguns (Fixed &amp; Turrets)
-16  Small Railguns (Fixed &amp; Turrets)
-15 Gatling Turrets
+16 Small Railguns (Fixed &amp; Turrets)
+16 Gatling Turrets
 15 Assault Canon Turrets
 15 Artillery Turrets
 15 CTC
 1 Radar
 
-Most weapons have exclusion zones arround them to avoid spamming
+Most weapons have exclusion zones around them to avoid spamming
 </code></pre>
 <h3 id="misc">Misc</h3>
 <pre><code>3 Respawn points (Survival Kits &amp; Medical Rooms)
 56 Gravity generators
 56 Mass blocks
+150 Thrusters (whatever the type)
 </code></pre>
 <h2 id="max-per-players">Max Per Players</h2>
 <h3 id="tools-1">Tools</h3>
@@ -633,7 +655,7 @@ Most weapons have exclusion zones arround them to avoid spamming
 <li><strong>Modular Encounter System</strong>: Meridius_IX / Lucas</li>
 <li><strong>Dynamic Max Speed, Thrust Signature</strong>: Rednight</li>
 <li><strong>Transit System, Physical Freight</strong>: Rednight</li>
-<li><strong>RCS Thrusters</strong>: Rednight</li>
+<li><strong>RCS Thrusters, Dynamic Economy</strong>: Rednight</li>
 <li><strong>WCVanilla Weapon Replacer</strong>: Rednight</li>
 <li><strong>Custom VFX &amp; SFX</strong>: Rednight</li>
 </ul>

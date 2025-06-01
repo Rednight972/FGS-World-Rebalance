@@ -188,21 +188,39 @@ This is to make Silicon, Silver and Nickel mining more relevant instead of the c
 Gravel production is now reduced by a factor of 10 and has no usefulness for the moment
 
 ## Blocks
-### Energy Generation
-Some energy generation blocks have been buffed or nerfed to accommodate the new progression and end game
+### Power Generation
+Some power generation blocks have been buffed or nerfed to accommodate the new progression and end game
+All active power generation blocks have now a shared
+* PCU cost of 500
+* Block limit per grid of 34
+
+**If you want more power density for the same PCU cost you'll have to progress from the lower tech to higher tech**
 
 #### Solar Panels
 Power Output x1.5 from 0.16 to 0.240MW and 0.04 to 0.06MW
 
 #### Hydro Engines
 Max power output doubled from 5 to 10MW and 0.5 to 1MW
+PCU is now 500
 
 #### Reactors
-Reactors will consume twice more uranium than in vanilla.
+Large reactors will consume 2 times more uranium than vanilla
+Small reactors will consume 3 times more uranium than vanilla
+Block limit of 10 per grid
+PCU is now 500
+
 It will compensate the lack of JumpDrive charge when moving around the system and act as a money sink
+while promoting the use of the large reactors over small reactors spamming
+
+### Batteries
+Max input power lowered from 12MW to 8MW
+Block limit of 18 per grid
+PCU is now 500
+*This is to promote battery as buffers and not main power sources*
 
 ### Jump Drive
 Recipe: Changed Gravity Generator requirement to 100 Superconductors
+
 Added a small grid version
 
 ### Safe Zone
@@ -310,8 +328,8 @@ Having a JumpDrive on board will give you better boost speed
 
 ## Navigation: Hydrogen rebalance
 
-    Large grid hydrogen thrusters have a x4 thrust increase
-    Small grid hydrogen thrusters have a x1.5 thrust increase
+    Large hydrogen thrusters have a x4 thrust increase
+    Small hydrogen thrusters have a x1.5 thrust increase
     Hydrogen efficiency buffed, as it'll be used 
     for power and travel in this rebalance:
     x1.3 for large grid thrusters
@@ -329,7 +347,7 @@ A master switch terminal control is present in Cockpit's menu or use SHIFT+R
 
 You can also decouple RCS dampening by pressing SHIFT+X:
 RCS will no more dampen the rotation if the grid's dampeners are OFF
-Note: You'll still have gyro dampening at all time
+Note: You will still have gyro dampening at all time
 
 ## Navigation: JumpDrive
 
@@ -433,6 +451,10 @@ Block spamming is a real performance issue in Space Engineers and does not promo
 
 To fix those weaknesses the following rules applies:
 ## Max Per Grid
+### Power Generation
+    34 of all the following: Reactors, Hydrogen engines and batteries
+    10 Reactors
+    18 Batteries
 ### Tools
     25 Welders
     6 Grinders
@@ -447,18 +469,19 @@ To fix those weaknesses the following rules applies:
 ### Weapons
     12 Rocket Launchers
     8 Large Railguns (Fixed & Turrets)
-    16  Small Railguns (Fixed & Turrets)
-    15 Gatling Turrets
+    16 Small Railguns (Fixed & Turrets)
+    16 Gatling Turrets
     15 Assault Canon Turrets
     15 Artillery Turrets
     15 CTC
     1 Radar
 
-    Most weapons have exclusion zones arround them to avoid spamming
+    Most weapons have exclusion zones around them to avoid spamming
 ### Misc
     3 Respawn points (Survival Kits & Medical Rooms)
     56 Gravity generators
     56 Mass blocks
+    150 Thrusters (whatever the type)
 
 ## Max Per Players
 ### Tools
@@ -489,7 +512,7 @@ To fix those weaknesses the following rules applies:
 * **Modular Encounter System**: Meridius_IX / Lucas
 * **Dynamic Max Speed, Thrust Signature**: Rednight
 * **Transit System, Physical Freight**: Rednight
-* **RCS Thrusters**: Rednight
+* **RCS Thrusters, Dynamic Economy**: Rednight
 * **WCVanilla Weapon Replacer**: Rednight
 * **Custom VFX & SFX**: Rednight
 
