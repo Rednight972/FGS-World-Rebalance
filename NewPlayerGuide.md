@@ -26,6 +26,7 @@ The progression then is basically the same as vanilla: **Get a refinery and asse
 **<span style="color:red">Remember: you cannot have your station base in the hotspots, go to the Fast Zone to build it</span>**
 
 Once you have production capabilities you'll need **gold** and **silver** to get to your first JumpDrive, renamed Transit System.
+
 => It will unlock the custom made **Transit System** allowing you to travel in Luyten at high speed (12km/s)
 
 **You'll now have access to the mid game where you can choose how you'll interact with the economy**
