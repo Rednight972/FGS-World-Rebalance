@@ -33,13 +33,16 @@ The idea behind Luyten was to promote traveling around the system, make grouping
 
 -> This will make end game ships and bases use the Economy System
 
+You can find a new player guide [here](NewPlayerGuide.html)
+
 ## World Map
 <img src="Screens/Luyten-World_Map.png" alt="World Map" width="720">
 
-The world is divided in 3 zones:
+The world is divided in 4 zones:
 * Planets (described above)
 * Hubs
 * Hot spots
+* Fast Zone (rest of space)
 
 ## Hubs
 ### Eos Station: Central Hub
