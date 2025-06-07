@@ -78,6 +78,7 @@ A small cluster of rather large pure Uranite asteroids and defended by the KMDI 
 <img src="Screens/H-Lutecia-small.png" alt="Lutecia Hot Spot" width="720">
 
 Don't get spotted or come with support
+
 Normal asteroid will spawn in a 100km radius from this cluster for space mining
 
 ### Hyakutake Hot spot: Fragmented Ice comet
