@@ -195,9 +195,10 @@ Gravel production is now reduced by a factor of 10 and has no usefulness for the
 ## Blocks
 ### Power Generation
 Some power generation blocks have been buffed or nerfed to accommodate the new progression and end game
+
 All active power generation blocks have now a shared
 * PCU cost of 500
-* Block limit per grid of 34
+* Block limit per grid of 35
 
 **If you want more power density for the same PCU cost you'll have to progress from the lower tech to higher tech**
 
@@ -206,12 +207,16 @@ Power Output x1.5 from 0.16 to 0.240MW and 0.04 to 0.06MW
 
 #### Hydro Engines
 Max power output doubled from 5 to 10MW and 0.5 to 1MW
+
 PCU is now 500
 
 #### Reactors
 Large reactors will consume 2 times more uranium than vanilla
+
 Small reactors will consume 3 times more uranium than vanilla
+
 Block limit of 10 per grid
+
 PCU is now 500
 
 It will compensate the lack of JumpDrive charge when moving around the system and act as a money sink
@@ -219,8 +224,11 @@ while promoting the use of the large reactors over small reactors spamming
 
 ### Batteries
 Max input power lowered from 12MW to 8MW
+
 Block limit of 18 per grid
+
 PCU is now 500
+
 *This is to promote battery as buffers and not main power sources*
 
 ### Jump Drive
@@ -344,19 +352,25 @@ Having a JumpDrive on board will give you better boost speed
 <img src="Screens/T-MTS.gif" alt="Maneuvering Thrusters">
 
 Small hydrogen thrusters can now act as RCS maneuvering thrusters
+
 All rotational input will be enhanced at the cost of 1.25 the max fuel consumption
+
 Your grid will be much more nimble with them on
 
 To activate the RCS, go to the desired thruster in the terminal and flip Use as RCS on
+
 A master switch terminal control is present in Cockpit's menu or use SHIFT+R
 
 You can also decouple RCS dampening by pressing SHIFT+X:
+
 RCS will no more dampen the rotation if the grid's dampeners are OFF
+
 Note: You will still have gyro dampening at all time
 
 ## Navigation: JumpDrive
 
 JumpDrive no longer provide jumping capabilities
+
 They now offer 2 benefits:
 ##### Access to Transit High Speed
 The transit system allows you to go up to 10km/s
