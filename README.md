@@ -33,7 +33,7 @@ The idea behind Luyten was to promote traveling around the system, make grouping
 
 -> This will make end game ships and bases use the Economy System
 
-You can find a new player guide [here](NewPlayerGuide.html)
+You can find a new player guide [here](NewPlayerGuide.md)
 
 ## World Map
 <img src="Screens/Luyten-World_Map.png" alt="World Map" width="720">

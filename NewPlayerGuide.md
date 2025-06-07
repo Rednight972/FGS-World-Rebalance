@@ -13,7 +13,7 @@ Important notes:
 
 Building in gravity will be challenging, get an utility ship to help you
 
-All the big changes and new mechanics are described [here](README.html)
+All the big changes and new mechanics are described [here](README.md)
 
 ## Space Start
 You will spawn in a large grid miner in one of the 2 ice hotspots:
@@ -88,4 +88,4 @@ Now that you have an income you'll get the funds to buy the economy locked compo
 * Railguns
 
 Have fun playing!
-All the big changes and new mechanics are described [here](README.html)
+All the big changes and new mechanics are described [here](README.md)
