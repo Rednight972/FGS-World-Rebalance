@@ -62,6 +62,7 @@ You can sell resources there to make your first money, the rarer the resource th
 Zorya is special as it offers very interesting **services for new players**:
 * Buy basic starter ships (Haulers, Miners)
 <img src="Screens/M-Zorya-Station-Starter-small.png" alt="Physical Cargo" width="360">
+
 * Exchange ores for ingots skipping refining time for a price
 * Exchange ice for O2 or H2 skipping the processing time for a price
 
