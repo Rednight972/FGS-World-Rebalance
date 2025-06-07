@@ -69,6 +69,7 @@ They are in high demand of ingots to power their labs
 Zorya Station was build by *G.C. Metals & Cryogenics* in conjunction with *Emerling-Voss Minerals*
 
 This is the home of everything **Ore, Ingot & Gas related**
+
 ***You can also sell grids here for space cash and buy basic ships***
 
 ## Hotspots
