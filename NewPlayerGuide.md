@@ -69,6 +69,7 @@ Zorya is special as it offers very interesting **services for new players**:
 
 ### Trading
 The 3 hubs store listings and prices are set so you can do item trading runs between them
+
 You'll have to discover what route and items to move between stations
 
 ### Physical Freight
